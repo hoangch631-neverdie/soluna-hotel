@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --soluna-green: #2A4535;
+    --soluna-cream: #F7F4E9;
+    --soluna-gold: #F2CE6E;
+    --soluna-sage: #859D82;
+    --soluna-oak: #C09D71;
+    --soluna-black: #1A1A1A;
+    --soluna-white: #FCFCFC;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #F7F4E9;
+    color: #1A1A1A;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-playfair), Georgia, serif;
+  }
+}
+
+@layer components {
+  /* Arch/Vòm image mask — signature Soluna shape */
+  .arch-mask {
+    border-radius: 200px 200px 0 0;
+    overflow: hidden;
+  }
+
+  .arch-mask-sm {
+    border-radius: 120px 120px 0 0;
+    overflow: hidden;
+  }
+
+  /* Thin 1px oak border — vibe khung thép mảnh */
+  .border-soluna {
+    border: 1px solid #C09D71;
+  }
+
+  /* Section spacing */
+  .section {
+    @apply px-4 sm:px-6 lg:px-8 py-20 lg:py-28;
+  }
+
+  .container-soluna {
+    @apply max-w-7xl mx-auto;
+  }
+
+  /* Divider line — gold */
+  .divider-gold {
+    @apply w-16 h-px bg-soluna-gold mx-auto my-6;
+  }
+
+  /* Primary button */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2
+           bg-soluna-green text-soluna-white
+           font-body text-sm tracking-widest uppercase
+           px-8 py-4
+           rounded-sm
+           transition-colors duration-200
+           hover:bg-soluna-green-hover
+           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-soluna-gold focus-visible:ring-offset-2;
+  }
+
+  /* Secondary button */
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2
+           bg-transparent text-soluna-green
+           font-body text-sm tracking-widest uppercase
+           px-8 py-4
+           border border-soluna-green
+           rounded-sm
+           transition-colors duration-200
+           hover:bg-soluna-green hover:text-soluna-white
+           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-soluna-gold focus-visible:ring-offset-2;
+  }
+
+  /* Ghost button — for dark backgrounds */
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2
+           bg-transparent text-soluna-white
+           font-body text-sm tracking-widest uppercase
+           px-8 py-4
+           border border-soluna-white
+           rounded-sm
+           transition-colors duration-200
+           hover:bg-soluna-white hover:text-soluna-green
+           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-soluna-gold focus-visible:ring-offset-2;
+  }
+}
