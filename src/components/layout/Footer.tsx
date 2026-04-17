@@ -107,19 +107,19 @@ export default function Footer() {
               <li className="flex items-center gap-3">
                 <Phone size={16} className="text-soluna-gold shrink-0" />
                 <a
-                  href="tel:+84xxxxxxxxx"
+                  href="tel:+84823791369"
                   className="font-body text-sm text-soluna-white/70 hover:text-soluna-white transition-colors"
                 >
-                  +84 xxx xxx xxx
+                  082 3791369
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={16} className="text-soluna-gold shrink-0" />
                 <a
-                  href="mailto:hello@solunahotel.vn"
+                  href="mailto:info@solunadalathotel.com"
                   className="font-body text-sm text-soluna-white/70 hover:text-soluna-white transition-colors"
                 >
-                  hello@solunahotel.vn
+                  info@solunadalathotel.com
                 </a>
               </li>
             </ul>

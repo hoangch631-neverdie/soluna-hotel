@@ -70,7 +70,7 @@ export default function Header() {
               </Link>
             ))}
             <Link
-              href="/book"
+              href="/quote"
               className={cn(
                 'font-body text-xs tracking-widest uppercase px-6 py-3 border transition-colors',
                 isScrolled
@@ -111,7 +111,7 @@ export default function Header() {
               </Link>
             ))}
             <Link
-              href="/book"
+              href="/quote"
               className="btn-primary mt-2 text-center"
               onClick={() => setMenuOpen(false)}
             >

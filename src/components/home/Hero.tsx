@@ -44,7 +44,7 @@ export default function Hero() {
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Link href="/book" className="btn-ghost">
+          <Link href="/quote" className="btn-ghost">
             Book Trực Tiếp
           </Link>
           <Link
