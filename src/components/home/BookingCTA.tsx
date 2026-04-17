@@ -36,8 +36,8 @@ export default function BookingCTA() {
           </ul>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link href="/book" className="btn-ghost">
-              Đặt Phòng Trực Tiếp Cùng Soluna
+            <Link href="/quote" className="btn-ghost">
+              Xem Báo Giá Trực Tiếp Cùng Soluna
             </Link>
             <a
               href="https://wa.me/84xxxxxxxxx"
