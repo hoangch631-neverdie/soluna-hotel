@@ -219,8 +219,11 @@ export default function QuoteCalculator() {
                 )}
               </div>
 
-              <button className="w-full bg-soluna-gold text-soluna-green hover:bg-white hover:text-soluna-green transition-colors font-bold py-4 rounded-xl uppercase tracking-widest text-sm">
-                Xác Nhận Đặt Phòng
+              <button
+                onClick={() => document.getElementById('hotellink-widget')?.scrollIntoView({ behavior: 'smooth' })}
+                className="w-full bg-soluna-gold text-soluna-green hover:bg-white hover:text-soluna-green transition-colors font-bold py-4 rounded-xl uppercase tracking-widest text-sm"
+              >
+                Xác Nhận Đặt Phòng ↓
               </button>
               <p className="text-center text-[10px] opacity-50 mt-4 px-4 uppercase tracking-widest leading-relaxed">
                 Đã bao gồm thuế, phí phục vụ & bữa sáng.

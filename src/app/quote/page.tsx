@@ -1,4 +1,5 @@
 import QuoteCalculator from '@/components/booking/QuoteCalculator';
+import HotelLinkWidget from '@/components/booking/HotelLinkWidget';
 import Link from 'next/link';
 
 export default function QuotePage() {
@@ -16,6 +17,15 @@ export default function QuotePage() {
         </div>
         
         <QuoteCalculator />
+
+        {/* Divider */}
+        <div className="flex items-center gap-6 my-4">
+          <div className="flex-1 h-px bg-soluna-oak/20" />
+          <span className="font-body text-xs uppercase tracking-widest text-soluna-green/30">Hoàn Tất Đặt Phòng</span>
+          <div className="flex-1 h-px bg-soluna-oak/20" />
+        </div>
+
+        <HotelLinkWidget />
       </div>
     </main>
   );
