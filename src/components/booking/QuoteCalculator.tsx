@@ -219,12 +219,14 @@ export default function QuoteCalculator() {
                 )}
               </div>
 
-              <button
-                onClick={() => document.getElementById('hotellink-widget')?.scrollIntoView({ behavior: 'smooth' })}
-                className="w-full bg-soluna-gold text-soluna-green hover:bg-white hover:text-soluna-green transition-colors font-bold py-4 rounded-xl uppercase tracking-widest text-sm"
+              <a
+                href="https://zalo.me/0823791368"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full block text-center bg-soluna-gold text-soluna-green hover:bg-white hover:text-soluna-green transition-colors font-bold py-4 rounded-xl uppercase tracking-widest text-sm"
               >
-                Xác Nhận Đặt Phòng ↓
-              </button>
+                Liên Hệ Đặt Phòng →
+              </a>
               <p className="text-center text-[10px] opacity-50 mt-4 px-4 uppercase tracking-widest leading-relaxed">
                 Đã bao gồm thuế, phí phục vụ & bữa sáng.
               </p>
