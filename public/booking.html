@@ -80,13 +80,17 @@
     </div>
   </div>
 
-  <script src="//book.securebookings.net/js/v2/widget.all.js" onload="loadWidget()"></script>
   <script>
-    function loadWidget() {
-      var s = document.createElement('script');
-      s.src = '//book.securebookings.net/widgetCustomize?lang=en&widgetType=Facebook&id=bb6137f3-5427-1775699848-4543-9cd1-273ccd5d236a&ajax=true';
-      document.body.appendChild(s);
-    }
+    document.addEventListener('DOMContentLoaded', function () {
+      var core = document.createElement('script');
+      core.src = 'https://book.securebookings.net/js/v2/widget.all.js';
+      core.onload = function () {
+        var customize = document.createElement('script');
+        customize.src = 'https://book.securebookings.net/widgetCustomize?lang=en&widgetType=Facebook&id=bb6137f3-5427-1775699848-4543-9cd1-273ccd5d236a&ajax=true';
+        document.body.appendChild(customize);
+      };
+      document.body.appendChild(core);
+    });
   </script>
 
 </body>
